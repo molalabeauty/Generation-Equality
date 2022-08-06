@@ -7,57 +7,32 @@
 
     <body>
         <h1>Earn Equal </h1>
+    
+    <form >
+        <div class="container">
+          <h1>Earnings Information:</h1>
 
-        <h3> Enter your  earnings information:</h3>
+          <p>Please fill in this form to enter your earnings information</p>
+          <hr>
       
-        <form action="/searchEmployeeSalary.html">  
-           <div class="style=width:800px; margin:0 auto;">
-            
-            Role in the company:  
-        
-                    <input type="text" name="role"/>  
-                    <br>
-        
+          <label for="email"><b>Role in the company: </b></label>
+          <input type="text" placeholder="Enter your role" name="role" id="role" required>
+      
+          <label for="psw"><b>Earnings: </b></label>
+          <input type="text" placeholder="Enter salary" name="salary" id="salary" required>
 
-                    <br>
-
-                 <label for="gender">Gender :</label>
-                  <select id="gender" name="gender">
-                  <option value="female">Option..</option> 
-                  <option value="female">Female</option>
-                  <option value="male">Male</option>
-                   </select>
-
-                   <br>
-
-
-                   <br>
-            Earnings:
-                    <input type="text" name="earnings"/>  
-                </form>  
-
-
-                  <br>
-
-                  <br>
-            Age:
-        
-                    <input type="text" name="age"/>  
-
-                   <br>
-
-                   <br>
-
-                    <button type="submit" value="submit">
-                        Submit
-                    </button>
-
-
-           </div>
-            
-         
-          
-    </body>
-
+          <label for="psw"><b>Gender: </b></label>
+          <input type="text" placeholder="Enter gender" name="gender" id="gender" required>
+      
+          <label for="psw-repeat"><b>Age:</b></label>
+          <input type="text" placeholder="Age" name="age" id="" required>
+          <hr>
+      
+          <p>By filling out this information you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Submit</button>
+        </div>
+      
+    
+      </form>
 
 </html>
