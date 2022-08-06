@@ -1,17 +1,62 @@
+<head>
+    <title>Earn Equal</title>
+    <link href="main.css" rel="stylesheet">
+  </head>
+
 <html>
 
     <body>
-        <h1> Enter your  earnings information:</h1>
+        <h1>Earn Equal </h1>
+
+        <h3> Enter your  earnings information:</h3>
       
-        <form method="post">  
-            Role in the company  
-                    <input type="text" name="fname"/>  
+        <form action="/searchEmployeeSalary.html">  
+           <div class="style=width:800px; margin:0 auto;">
+            
+            Role in the company:  
+        
+                    <input type="text" name="role"/>  
                     <br>
-            Gender 
-                    <input type="text" name="lname"/>  
+        
+
+                    <br>
+
+                 <label for="gender">Gender :</label>
+                  <select id="gender" name="gender">
+                  <option value="female">Option..</option> 
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                   </select>
+
+                   <br>
+
+
+                   <br>
+            Earnings:
+                    <input type="text" name="earnings"/>  
                 </form>  
-              
-                <button type="button">Save</button>
+
+
+                  <br>
+
+                  <br>
+            Age:
+        
+                    <input type="text" name="age"/>  
+
+                   <br>
+
+                   <br>
+
+                    <button type="submit" value="submit">
+                        Submit
+                    </button>
+
+
+           </div>
+            
+         
+          
     </body>
 
 
