@@ -1,0 +1,84 @@
+
+<html>
+  <head>
+  
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      body {font-family: "Times New Roman", Georgia, Serif;}
+        h1, h2, h3, h4, h5, h6 {
+          font-family: "Playfair Display";
+          letter-spacing: 5px;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+  
+     
+
+      google.charts.load('current', {'packages':['corechart']});
+
+      google.charts.setOnLoadCallback(drawAChart);
+      google.charts.setOnLoadCallback(drawBChart);
+
+      function drawAChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', '');
+        data.addColumn('number', '');
+        data.addRows([
+          ['Chief executive', 1],
+          ['Manager', 1],
+          ['Administrator', 2],
+          ['Receptionist', 2],
+        ]);
+
+        var options = {title:'Company wage equality by position',
+                       width:600,
+                       height:600};
+
+ 
+        var chart = new google.visualization.PieChart(document.getElementById('A_chart_div'));
+        chart.draw(data, options);
+      }
+
+
+      function drawBChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', '');
+        data.addColumn('number', '');
+        data.addRows([
+          ['Chief executive', 2],
+          ['Manager', 2],
+          ['Administrator', 2],
+          ['Reception', 2],
+
+        ]);
+
+        var options = {title:'Company wage equality by gender',
+                       width:600,
+                       height:600};
+        var chart = new google.visualization.PieChart(document.getElementById('B_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="w3-top" >
+      <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button">Earn Equal</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+      </div>
+      <h1>Gender Dashboard</h1>
+    <table class="columns">
+      <tr>
+        <td><div id="A_chart_div" style="border: 1px solid #ccc"></div></td>
+        <td><div id="B_chart_div" style="border: 1px solid #ccc"></div></td>
+      </tr>
+    </table>
+  </body>
+</html>
+
